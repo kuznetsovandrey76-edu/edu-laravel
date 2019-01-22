@@ -16,4 +16,8 @@ Route::get('/about', 'PagesController@about');
 Route::get('/contact', 'PagesController@contact');
 
 Route::get('/task', 'TasksController@index');
+Route::post('/task', 'TasksController@store');
+
+
+Route::get('/task/create', 'TasksController@create');
 
